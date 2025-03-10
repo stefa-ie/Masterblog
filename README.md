@@ -18,6 +18,9 @@ The Basics of the app cover:
 
 ## 💾 Usage
 Instructions on how to use the project:
+```sh# Clone the repository
+git clone https://github.com/username/project-name.git
+```
 ```sh
 # Run the application
 python app.py
