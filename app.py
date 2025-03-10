@@ -19,6 +19,7 @@ def load_blog_posts():
     with open(file_path, 'r') as fobj:
         return json.load(fobj)
 
+
 def save_blog_posts(posts):
     """
     Gets all blog posts as an argument and saves them to the JSON file.
@@ -35,6 +36,7 @@ def index():
     blog_posts = load_blog_posts()
     print(blog_posts)
     return render_template('index.html', posts=blog_posts)
+
 
 @app.route('/add', methods=['GET', 'POST'])
 def add():
@@ -66,6 +68,7 @@ def fetch_post_by_id(post_id):
             return post, blog_posts
         None
 
+
 @app.route('/update/<int:post_id>', methods=['GET', 'POST'])
 def update(post_id):
     """
@@ -85,6 +88,7 @@ def update(post_id):
         return redirect('/')
 
     return render_template('update.html', post=post)
+
 
 @app.route('/delete/<int:post_id>', methods=['POST'])
 def delete(post_id):
