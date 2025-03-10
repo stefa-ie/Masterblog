@@ -12,7 +12,7 @@ def load_blog_posts():
     The function loads the information from the JSON
     file and returns the data.
     """
-    file_path = 'blog_posts.json'
+    file_path = 'storage/blog_posts.json'
     if not os.path.exists(file_path):
         print(f"No such file: {file_path}")
         return []
@@ -23,7 +23,7 @@ def save_blog_posts(posts):
     """
     Gets all blog posts as an argument and saves them to the JSON file.
     """
-    with open('blog_posts.json', 'w') as fobj:
+    with open('storage/blog_posts.json', 'w') as fobj:
         json.dump(posts, fobj, indent=4)
 
 
