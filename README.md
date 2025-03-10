@@ -1,5 +1,6 @@
 # 🗓️ Masterblog 🗓️
 
+
 ## ✏️ Description
 This is my first Blog Application using Flask. 
 The Basics of the app cover:
@@ -21,6 +22,10 @@ Instructions on how to use the project:
 # Run the application
 python app.py
 ```
+```sh
+# Run the application on mac
+python3 app.py
+```
 
 
 ## 👥 Contributing
@@ -30,6 +35,7 @@ Guidelines for contributing:
 3. Commit your changes (`git commit -m 'Add new feature'`)
 4. Push to the branch (`git push origin feature-name`)
 5. Open a Pull Request
+
 
 ## 📬 Contact
 Provide ways to reach out for questions or collaboration:
